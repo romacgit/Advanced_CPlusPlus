@@ -1,0 +1,28 @@
+// Two dimensional Vectors.cpp : Defines the entry point for the console application.
+//
+
+#include "stdafx.h"
+#include <iostream>
+#include <fstream>
+#include <string>
+#include <vector>
+
+using namespace std;
+
+int main()
+{
+	vector< vector<int> > grid(3, vector<int>(4, 7));		// grid with 3 columns and 4 rows; all rows are initialized with value 7
+
+	grid[1].push_back(8);
+
+	for (int row = 0; row < grid.size(); row++) {
+		for (int col = 0; col < grid[row].size(); col++) {
+			cout << grid[row][col] << flush;
+		}
+		cout << endl;
+	}
+
+	cin.get();
+	return 0;
+}
+
