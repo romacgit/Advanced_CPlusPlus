@@ -22,7 +22,6 @@ int countStrings(vector<string> &texts, bool(*match)(string test)) {
 			tally++;
 		}
 	}
-
 	return tally;
 }
 
